@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css" />
+    <script lang="javascript" src="js.js"></script>
+  </head>
+  <body >
+    <header><h1>Ajouter un offre</h1></header>
+    <nav>
+        <label>cin</label><br>
+        <label>pseudo</label><br>
+        <label>tel</label><br>
+        <label>mail</label>
+        <br>
+        <label>objet</label>
+    </nav>
+
+    <section>
+        <form action="list.php" method="post">
+        <input type="text" id="cin"/><br>
+        <input type="text" id="ps"/><br>
+        <input type="tel" id="tel"/><br>
+        <input type="email" id="mail"/><br>
+        <select name="op" id="op" >
+            <option value="500">les gants de attouga</option>
+            <option value="100">les maillot de ben rkhissa</option>
+            <option value="400">les crmpons de dhieb</option>
+        </select>
+    </section>
+<footer>
+    <input type="radio" value="carte" name="s" id="cb" />carte boncaire
+    <input type="radio" value="cheque" name="s" id="c" />cheque
+    <input type="radio" value="virement" name="s" id="v" />virement<br>
+    <input type="checkbox"  name="l" id="accept" />j'accepte les termes de contrat<br>
+    prix propose<input type="text" id="prix" onfocus="return verif()"/>
+     <input type="submit" value="encherir" onclick="return offre()">
+    <input type="reset" value="recomencer"  ></form>
+</footer>
+  </body>
+</html>
